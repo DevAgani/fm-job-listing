@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+*{
+    font-family: 'Spartan',sans-serif;
+}
+/*reset the margin and padding*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(180, 52%, 96%);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+    display: block;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{
+    background-image: url("../images/bg-header-desktop.svg");
+    background-color: hsl(180, 29%, 50%);
+    height: 156px;
+}
+
+/*job-listing-container*/
+.job-listing-container{
+    width: 80vw;
+    margin: 60px auto 100px;
+}
+
+.job-listing-card{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 19px #aaaaaa;
+}
+.job-listing-card:hover{
+    border-left: solid 5px hsl(180, 29%, 50%);
+    transition: all ease 0.3s;
+}
+
+.job-listing-img{
+    padding: 13px;
+}
+
+.job-listing-info-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.job-listing-header,.job-listing-position{
+    display: flex;
+}
+.job-listing-header{
+    margin-top: 10px;
+}
+.job-listing-position{
+    margin-top: 22px;
+}
+
+.job-listing-header-title{
+    margin-right: 10px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+.job-listing-header-tags{
+    text-transform: uppercase;
+    font-size: 8px;
+    margin: auto 0;
+    font-weight: 700;
+}
+.job-listing-header-tag{
+    padding: 6px;
+    background-color: hsl(180, 29%, 50%);
+    color: #ffffff;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.job-listing-header-tag:nth-child(2){
+    background-color: #000000;
+}
+
+.job-listing-position-name{
+    font-weight: 700;
+    font-size: 18px;
+}
+.job-listing-muted-info{
+    padding: 0;
+    position: absolute;
+    bottom: 7px;
+    font-weight: 500 ;
+    font-size: 12px;
+    color: hsl(180, 8%, 52%);
+}
+.job-listing-muted-info-position-contract, .job-listing-muted-info-position-location{
+    margin-left: 20px;
+}
+
+ul.job-listing-position-tags {
+    position: absolute;
+    right: 0;
+    margin-right: 27px;
+
+}
+.job-listing-position-tag{
+    margin-left: 20px;
+    padding: 10px;
+    background-color:hsl(180, 31%, 95%);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+}
+
+
